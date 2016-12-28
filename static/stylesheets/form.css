@@ -37,8 +37,12 @@
 	padding: 0 10px;
 	border-bottom: 1px solid #dedede;
 }
+
 .line > input:focus {
 	border-color: #5c90d2;
+}
+.line .err {
+	border-color: #ff6666;
 }
 .link {
 	float: right;
@@ -51,4 +55,19 @@
 }
 .link > a:active {
 	text-decoration: underline;
+}
+/* 弹窗 */
+.notifys {
+	position: absolute;
+    z-index: 5;
+    bottom: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    width: 36vw;
+    text-align: center;
+    padding: 13px;
+    border-radius: 3px;
+    left: 50%;
+    margin-left: -18vw;
 }
