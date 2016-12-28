@@ -28,7 +28,8 @@ router.post('/register', (req, res, next) => {
     }
 
     user_action.register(param).then(rs => {
-        return res.json(rs);
+        // return res.json(rs);
+        return res.redirect('/user');
     }).catch(err => {
         return res.json(err);
     });

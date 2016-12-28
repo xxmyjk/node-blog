@@ -22,6 +22,7 @@ var BaseLogin = function() {
 	var notify = function(text) {
 		var notifys = $('.notifys');
 		var notify = $('<li />').html(text);
+
 		if(notifys.length == 0){
 			notifys = $('<ul />').addClass('notifys').appendTo('body');
 		}
@@ -45,7 +46,8 @@ var BaseLogin = function() {
 		var register_form = $('.register-form')
 		// reg
 		var re_phone = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
-		var re_email = /^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/; 
+		var re_email = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g; 
+
 		// login
 		login_btn.on('click', function(e) {
 			e.preventDefault();
@@ -100,7 +102,7 @@ var BaseLogin = function() {
 			initValidate();		
 		}
 	}
-
+ 
 }();
 
 jQuery(function() {	BaseLogin.init() });

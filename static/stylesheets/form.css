@@ -19,17 +19,17 @@
 	color: #393939;
 	display: table;
 }
-.line > label,
-.line > input {
+.index-login .line > label,
+.index-login .line > input {
 	display: table-cell;
 	vertical-align: middle;
 	font-size: 15px;
 	height: 40px;
 }
-.line > label {
+.index-login .line > label {
 	width: 4rem;
 }
-.line > input {
+.index-login .line > input {
 	width: 100%;
 	border: none;
 	outline: none;
@@ -38,22 +38,22 @@
 	border-bottom: 1px solid #dedede;
 }
 
-.line > input:focus {
+.index-login .line > input:focus {
 	border-color: #5c90d2;
 }
-.line .err {
+.index-login .line .err {
 	border-color: #ff6666;
 }
-.link {
+.index-login .link {
 	float: right;
 	padding-top: 10px;
 	font-size: 14px;
 	color: #5c90d2
 }
-.link > a {
+.index-login .link > a {
 	color: #5c90d2;
 }
-.link > a:active {
+.index-login .link > a:active {
 	text-decoration: underline;
 }
 /* 弹窗 */

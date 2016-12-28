@@ -1,0 +1,76 @@
+.add-comment {
+	max-width: 750px;
+	margin: 0 auto;
+}
+.add-comment > .add-cmt {
+	width: 100%;
+	margin: 0 auto;
+}
+.add-cmt > .to {
+	width: 100%;
+	background-color: #fff;
+	height: 4rem;
+	display: table;
+	margin-bottom: 20px;
+}
+.add-cmt > .to > label,
+.add-cmt > .to > input {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #393939;
+}
+.add-cmt > .to > label {
+	width: 4rem;
+	text-align: right;
+	font-size: 14px;
+}
+.add-cmt > .to > input {
+	width: 94%;
+	height: 100%;
+	padding: 0 3%;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #dedede;
+}
+.add-cmt > .content > textarea:focus,
+.add-cmt > .to > input:focus {
+	border-color: #5c90d2;
+}
+
+.add-cmt > .content {
+	width: 100%;
+	background-color: #fff;
+	display: table;
+}
+.add-cmt > .content > label,
+.add-cmt > .content > textarea {
+	display: table-cell;
+}
+.add-cmt > .content > label {
+	width: 4rem;
+	text-align: right;
+	vertical-align: top;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 3.8rem;
+}
+.add-cmt > .content > textarea {
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+	margin: 7.8% 3% 0 0;
+	padding: 0 3%;
+	outline: none;
+	position: relative;
+	border-bottom: 1px solid #dedede;
+	font-size: 14px;
+	color: #666;
+
+	resize: none;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	min-height: 3rem;
+	max-height: 200px;
+}
