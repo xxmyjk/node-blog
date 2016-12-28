@@ -4,8 +4,8 @@
 	padding-bottom: 1px;
 	background-color: #fff;
 }
-.index-login > .login-form {
-	/*display: none;*/
+.index-login > .register-form {
+	display: none;
 }
 .index-login > .login-form, 
 .index-login > .register-form {
