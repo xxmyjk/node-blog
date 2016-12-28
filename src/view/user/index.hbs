@@ -24,33 +24,33 @@
     <form class="register-form" action="/user/register" method="post">
         <div class="line">
             <label for="nickname">昵称</label>
-            <input type="text" name="nickname" value="">
+            <input id="nickname" type="text" name="nickname" value="">
         </div>
 
         <div class="line">
             <label for="email">邮箱</label>
-            <input type="text" name="email" value="">
+            <input id="email" type="text" name="email" value="">
         </div>
 
         <div class="line">
             <label for="mobile">手机号</label>
-            <input type="text" name="mobile" value="">
+            <input id="phone" type="text" name="mobile" value="">
         </div>
 
         <div class="line">
             <label for="password">密码</label>
-            <input type="password" name="password" value="">
+            <input id="pwd" type="password" name="password" value="">
         </div>
 
         <div class="line">
             <label for="password-repeat">密码重复</label>
-            <input type="password" name="password-repeat" value="">
+            <input id="repeat-pwd" type="password" name="password-repeat" value="">
         </div>
 
         <div id="login" class="link">|&nbsp;&nbsp;<a href="javascript:;">登录</a>
         </div>
 
-        <button type="submit" name="register">注册</button>
+        <button id="register_btn" type="submit" name="register">注册</button>
     </form>
 </div>
 <script src="/javascript/login.js"></script>
