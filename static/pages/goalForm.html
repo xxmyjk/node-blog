@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>goalForm</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no,email=no,address=no,date=no"/>
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    <link rel="stylesheet" href="/stylesheets/reset.css" />
+    <link rel="stylesheet" href="/stylesheets/common.css" />
+    <link rel="stylesheet" href="/stylesheets/goalForm.css" />
+    <script src="../javascript/jquery-3.1.1.js"></script>
+</head>
+<body>
+	<div class="goal-form">
+        <form class="form" action="#">
+            <div class="line">
+                <input type="text" 
+                       class="title"
+                       placeholder="主题"
+                       value="" 
+                       maxLength="20" />    
+            </div>
+            <div class="line">
+                <div class="start">
+                    <input class="startdate" 
+                           type="date"
+                           value=""
+                           placeholder="开始日期" />
+                </div>    
+                <div class="center"></div>    
+                <div class="end">
+                    <input class="enddate" 
+                           type="date"
+                           value=""
+                           placeholder="结束日期" />
+                </div>    
+            </div>
+            <div class="line describe">
+                <div class="desc-txt">类型</div>
+                <select class="type" 
+                        value="" >
+                    <option value="day">每天</option>
+                    <option value="week">周目标</option>
+                    <option value="month">月目标</option>
+                    <option value="year">年目标</option>
+                </select>
+            </div>
+            <div class="line remark">
+                <textarea class="remark-txt"
+                          rows="1"
+                          maxLength="200"
+                          value=""
+                          placeholder="写几句话鼓励一下自己"
+                          onkeyup="handleChange(event);" 
+                          ></textarea>
+                <div class="num"> 0/200 </div>
+            </div>
+        </form>
+        <div class="btn-submit">确定</div>
+    </div>
+    <script>
+        function handleChange(e) {
+            var target = e.target;
+            var clientHeight = target.clientHeight;
+            var textLength = target.textLength;
+            var scrollHeight = target.scrollHeight;
+
+            if(clientHeight !== scrollHeight){
+                target.style.height = scrollHeight + "px";
+            }                                        
+        }
+    </script>
+</body>
+</html>

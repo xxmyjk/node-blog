@@ -1,0 +1,130 @@
+.goal-form {
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 20px 0 5px;
+	background-color: #fff;
+}
+.goal-form .form {
+	width: 92%;
+	margin: 0 auto;
+}
+.goal-form .line {
+	width: 100%;
+	min-height: 40px;
+	padding-top: 15px;
+}
+.goal-form .line input,
+.goal-form .line textarea,
+.goal-form .line select {
+	width: 100%;
+	min-height: 40px;
+	font-size: 15px;
+	border: none;
+	color: #666;
+	box-shadow: 0px 1px 0px 0px #D1D1D1;
+	padding: 0 12px;
+	box-sizing: border-box; /*padding不会改变自身的大小*/
+}
+.goal-form .line input[type="date"] {
+	padding-right: 0;
+}
+/**
+ * 获取焦点时的样式
+ */
+.goal-form .line input:focus,
+.goal-form .line textarea:focus,
+.goal-form .line select:focus {
+	box-shadow: 0px 1px 0px 0px #8468FF;
+}
+.goal-form .line .title {
+	width: 100%;
+}
+.goal-form .line .start,
+.goal-form .line .center,
+.goal-form .line .end {
+	float: left;
+	height: 100%;
+}
+.goal-form .line .start,
+.goal-form .line .end {
+	width: 45%;
+}
+.goal-form .line .center {
+	width: 10%;
+	height: 40px;
+	background: url(../images/to.png) no-repeat center;
+	background-size: 1.5rem;
+}
+/**
+ * 类型select样式
+ */
+.goal-form .describe  {
+	width: 100%;
+	min-height: 40px;
+	display: table;
+}
+.goal-form .describe .desc-txt,
+.goal-form .describe .type {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 15px;
+	color: #666;
+}
+.goal-form .describe .desc-txt {
+	width: 5rem;
+	text-indent: 12px;
+}
+
+.goal-form .describe .type {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+
+/**
+ * remark 样式
+ */
+.goal-form .remark {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	position: relative;
+}
+.goal-form .line .remark-txt {
+	width: 100%;
+	display: block;
+	resize: none;/*去除textarea右下角默认样式*/
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 10px 12px;
+	min-height: 45px;
+	max-height: 200px;
+	line-height: 1.5;
+	color: #666;
+}
+.goal-form .remark .num {
+	min-width: 100px;
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/**
+ * 确定按钮
+ */
+.goal-form .btn-submit {
+	width: 65%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 3px;
+	margin: 20px auto;
+	background-color: #8468FF;
+	color: #fff;
+}
