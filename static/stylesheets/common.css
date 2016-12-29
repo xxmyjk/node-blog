@@ -3,13 +3,7 @@ body{
 	font-family: "Microsoft YaHei";
 	background-color: #f9f9f9;
 }
-#root {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
+
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {

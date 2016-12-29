@@ -1,0 +1,126 @@
+.goal-list {
+    max-width: 750px;
+    width: 100%;
+}
+.goal-list .tab {
+    max-width: 750px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    display: table;
+    z-index: 10;
+}
+.goal-list .tab .col {
+    display: table-cell;
+    width: 33.3333333%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 15px;
+    color: #666;
+}
+.goal-list .tab .col-left,
+.goal-list .tab .col-center {
+    position: relative;
+}
+.goal-list .tab .col-left:after,
+.goal-list .tab .col-center:after {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 1px;
+    height: 2rem;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+}
+.goal-list .tab .col:active {
+    background-color: #dedede;
+}
+.goal-list .tab .col.active {
+    border-bottom: 2px solid #6234E2;
+    color: #6234E2;
+}
+
+/* 列表的样式 */
+.goal-list .list {
+    width: 100%;
+    margin-top: 5rem;
+}
+.goal-list .list .item {
+    width: 100%;
+    background-color: #fff;
+    padding: 0.7rem 0;
+    margin-bottom: 1rem;
+}
+.goal-list .list .item:active {
+    background-color: #e0e0e0;
+}
+.goal-list .list .item .line {
+    width: 87%;
+    margin: 0 auto;
+    height: 2.4rem;
+    display: table;
+}
+.goal-list .list .item .line>div {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 2.4rem;
+    font-size: 14px;
+    color: #555;
+}
+.goal-list .list .item .line .title {
+    font-weight: bold;
+}
+.goal-list .list .item .line .status {
+    text-align: right;
+    color: #ff6666;
+}
+.goal-list .list .item .line .col-center {
+    text-align: center;
+    width: 20%;
+    background: url(../images/to.png) no-repeat center center;
+    background-size: 30px;
+}
+.goal-list .list .item .line .col-start {
+    width: 40%;
+    text-align: left;
+    color: #6234E2;
+}
+.goal-list .list .item .line .col-end {
+    width: 40%;
+    text-align: right;
+    color: #6234E2;
+}
+.goal-list .list .item .line-time {
+    border-bottom: 0.5px solid #e0e0e0;
+}
+.goal-list .list .item .line .type>span {
+ color: #797979;
+}
+.goal-list .list .item .line-type {
+    position: relative;
+}
+.goal-list .list .item .line-type > a {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    z-index: 100;
+}
+.goal-list .list .item .line-type > .del {
+    top: 3px;
+    right: 0;
+    background: url(../images/del.png) no-repeat center center;
+    background-size: 25px;
+}
+.goal-list .list .item .line-type > .modify {
+    top: 3px;
+    right: 2.5rem;
+    background: url(../images/modify.png) no-repeat center center;
+    background-size: 25px;
+}
