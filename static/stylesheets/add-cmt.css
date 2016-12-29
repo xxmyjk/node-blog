@@ -53,24 +53,24 @@
 	vertical-align: top;
 	box-sizing: border-box;
 	font-size: 14px;
-	line-height: 3.8rem;
+	line-height: 4rem;
 }
 .add-cmt > .content > textarea {
 	width: 100%;
+	padding: 0 3%;
+	margin-top: 21px;
+	padding-bottom: 20px;
 	border: none;
 	box-sizing: border-box;
-	margin: 7.8% 3% 0 0;
-	padding: 0 3%;
 	outline: none;
 	position: relative;
 	border-bottom: 1px solid #dedede;
 	font-size: 14px;
 	color: #666;
-
 	resize: none;
 	word-wrap: break-word;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	min-height: 3rem;
 	max-height: 200px;
+	line-height: 1.5;
 }

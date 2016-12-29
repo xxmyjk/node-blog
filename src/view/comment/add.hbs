@@ -11,7 +11,7 @@
 	        <textarea type="text" 
 	        		  name="content" 
 	        		  placeholder="评论内容(必填)" 
-	        		  onChange="handleChange(event);"
+	        		  onkeyup="handleChange(event);"
 	        		  value=""></textarea>
 	    </div>
 	    <button id="cmt-btn" type="submit" name="add_comment">提交</button>
@@ -20,8 +20,6 @@
 <script>
 	function handleChange(e) {
         var target = e.target;
-        console.log('1');
-        // debugger;
         var clientHeight = target.clientHeight;
         var textLength = target.textLength;
         var scrollHeight = target.scrollHeight;
